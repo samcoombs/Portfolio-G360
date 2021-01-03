@@ -1,0 +1,34 @@
+.section-about {
+  &__heading {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about-container {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  top: 0;
+  //   background-color: red; //REMOVE THIS
+  display: inline-block;
+  height: 30rem;
+  width: 22rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  &__img {
+    height: 5rem;
+    width: 5rem;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    padding-top: 0.8rem;
+  }
+}

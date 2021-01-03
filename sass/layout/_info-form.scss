@@ -1,0 +1,122 @@
+.info__form {
+  &-container {
+    position: relative;
+    display: flex;
+    flex-basis: auto;
+    justify-content: start;
+    align-items: center;
+
+    background-image: linear-gradient(
+        120deg,
+        rgba($color-white, 0.6) 0%,
+        rgba($color-white, 0.6) 49.9%,
+        transparent 50%
+      ),
+      url(../img/george-bakos-OvEr7BwXxxg-unsplash.jpg);
+
+    // background-image: linear-gradient(
+    //     120deg,
+    //     rgba($color-white, 0.2) 0%,
+    //     rgba($color-white, 0.2) 100%
+    //   ),
+    //   url(../img/george-bakos-OvEr7BwXxxg-unsplash.jpg);
+    // url(../img/drif-riadh-YpkuRn54y4w-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 2rem rgba($color-black, 0.4);
+    width: 70%;
+    height: 70%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 35rem;
+    }
+  }
+
+  &--item {
+    height: 5rem;
+    // width: inherit;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    font-family: $secondary-font-family;
+    box-shadow: 0 0 2rem rgba($color-black, 0.3);
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      border-left: 4px solid $color-primary;
+      border-right: 4px solid $color-primary;
+    }
+
+    &:focus:invalid {
+      border-left: 4px solid $color-invalid;
+      border-right: 4px solid $color-invalid;
+    }
+
+    &-question {
+      height: 10rem;
+    }
+
+    &-submit {
+      display: flex;
+      justify-content: center;
+      height: 5rem;
+      width: 15rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+      border: none;
+      background-color: $color-primary;
+      font-family: $secondary-font-family;
+      font-weight: 600;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+      color: $color-white;
+      box-shadow: 0 0 1rem rgba($color-black, 0.25);
+      transition: all 0.4s;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: $color-white;
+        background-image: none;
+        color: $color-primary;
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+        cursor: pointer;
+      }
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.4);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1276px) {
+  .info__form {
+    &--item {
+      &-submit {
+        margin: 1rem auto;
+      }
+    }
+    &-container {
+      justify-content: center;
+      background-image: linear-gradient(
+          120deg,
+          rgba($color-white, 0.5) 0%,
+          rgba($color-white, 0.5) 100%
+        ),
+        url(../img/george-bakos-OvEr7BwXxxg-unsplash.jpg);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.header {
+  height: 105vh;
+  width: auto;
+  background-image: url(../img/Home.jpg);
+  background-size: cover;
+  background-position: top;
+
+  &__text-box {
+    margin: 0 auto;
+    margin-top: 27.5vh;
+  }
+}

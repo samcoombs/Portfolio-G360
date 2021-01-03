@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./icons/icon-main.svg" type="img/svg">
+    <link rel="stylesheet" href="/sass/main.css" type="text/css">
+    
+    <script defer src="/script.js"></script>
+
+
+    <title>Gap Year Travel Experts | Gap360</title>
+</head>
+<body>
+
+<!-- MODAL -->
+<div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <h1 class="modal__header">Offers</h1>
+    <p class="modal__text">
+        Head down to our destinations section in order to see what offers we currently have!
+    </p>
+</div>
+<div class="overlay hidden"></div>
+
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <!-- LOGO -->
+        <div class="heading__logo">
+            <img src="./icons/logo-white.svg" alt="Gap360"  class="heading__logo-main">
+        </div>
+    
+        <!-- MIDDLE NAV -->
+        <nav class="navigation__nav">    
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href=""     class="navigation__link navigation__link--about">About</a>
+                    </li>  
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link navigation__link--destinations">Destinations</a>
+                    </li>  
+                    <li class="navigation__item">
+                        <a href=""     class="navigation__link show-modal">Offers</a>
+                    </li>  
+                </ul>
+        </nav>
+
+      <!-- BURGER MENU -->
+      <div class="burger-nav">
+         <input type="checkbox" class="burger-nav__checkbox"   id="burger-toggle">
+
+         <label for="burger-toggle" class="burger-nav__button">
+             <span class="burger-nav__icon scroll">&nbsp;</span>
+         </label>  
+       
+
+         <div class="burger-nav__background"></div>
+
+         <div class="burger-nav__nav">
+            <img src="./icons/icon-white.svg" alt="Gap360 White Icon" class="burger-nav__img">
+            <ul class="burger-nav__list">
+                <li class="burger-nav__item"><a href="#" class="burger-nav__link">Log in</a></li> 
+                <li class="burger-nav__item"><a href="#" class="burger-nav__link">Trip activities</a></li> 
+                <li class="burger-nav__item"><a href="#" class="burger-nav__link">Travel advice</a></li> 
+                <li class="burger-nav__item"><a href="#" class="burger-nav__link">Free brochure</a></li> 
+            </ul>
+        </div>
+    
+    </div>
+ 
+    </div>
+
+<!-- MAIN HEADER -->
+
+    <header class="header">
+        <div class="header__background">&nbsp;</div>
+        <div class="header__text-box u-center-text">
+            <h1 class="heading-primary u-margin-bottom-standard">
+                <span class="heading-primary__text">Gap year travel experts</span>
+            </h1>
+                <!-- Search Bar -->
+                <span class="heading-primary__search">
+                    <form action="/">
+                    <input type="text" class="heading-primary__search--input" placeholder="Your dream destination here...">
+                    <!-- Search Button -->
+                    <input type="submit" class="heading-primary__search--submit" id="search-bar--submit">
+                        <label for="search-bar--submit" class="search-bar--submit-label">
+                            <img src="icons/Seach-Glass.svg" alt="Search" class="heading-primary__search--button">
+                        </label>
+
+                    
+                </form>
+                </span>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- TRIP FINDER FORM -->
+        <div class="trip-finder">
+            <form action="" class="trip-finder__form">
+                <div class="trip-finder__wrapper">
+                <!-- DESTINATION -->
+                <select name="destination" id="find-my-trip__destination" class="trip-finder__option trip-finder__destination">
+                    <option value="" disabled selected>Destination</option>
+                    <option value="1">Australia</option>
+                    <option value="2">Thailand</option>
+                    <option value="3">Bali</option>
+                    <option value="4">South Africa</option>
+                </select>
+
+                 <!-- ACTIVITIES -->
+                 <select name="activities" id="find-my-trip__activities" class="trip-finder__option trip-finder__activities">
+                    <option value="" disabled selected>Activities</option>
+                    <option value="1">Group Tours</option>
+                    <option value="2">Paid Work</option>
+                    <option value="3">Volunteer</option>
+                    <option value="4">Party</option>
+                </select>
+
+                 <!-- DURATION -->
+                 <select name="duration" id="find-my-trip__duration" class="trip-finder__option trip-finder__duration">
+                    <option value="" disabled selected>Duration</option>
+                    <option value="1">Up to 4 weeks</option>
+                    <option value="2">Up to 6 months</option>
+                    <option value="3">Up to 12 months</option>
+                    <option value="4">More than a year</option>
+                </select>
+
+                <!-- SUBMIT -->
+                <input type="submit" class="trip-finder__option trip-finder__submit" value="Find my trip!">
+
+            </div>
+            </form>
+
+        </div>
+
+        <!-- POPULAR EXPERIENCES -->
+       <section class="section-experiences" id="destinations">
+
+        <div class="section-experiences__heading u-heading-secondary  u-center-text u-margin-bottom-large">
+            <h2 class="heading-secondary--text experiences-heading">
+                Our most popular experiences
+            </h2>
+        </div>
+
+        <div class="experiences-container">
+            <!-- CARD 1 -->
+            <div class="card">
+                <div class="card__side card__side--front card__side--front-1">
+
+                        <h3 class="card__heading">
+                        <span class="card__heading-span card__heading-span--1">Australia</span>
+                        </h3>
+
+                </div>
+                <div class="card__side card__side--back card__side--back-1">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <h4 class="card__price-title">East Coast Adventure</h4>
+                            <span class="card__price-underline">&nbsp;</span>
+                            <p class="card__price-only">Only</p>
+                            <p class="card__price-value">£1999</p>
+                            <a href="#" class="btn btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- CARD 2 -->
+             <div class="card">
+                <div class="card__side card__side--front card__side--front-2">
+
+                        <h3 class="card__heading">
+                        <span class="card__heading-span card__heading-span--2">Thailand</span>
+                        </h3>
+
+                </div>
+                <div class="card__side card__side--back card__side--back-2">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                            <h4 class="card__price-title">Thai Intro</h4>
+                            <span class="card__price-underline">&nbsp;</span>
+                            <p class="card__price-only">Only</p>
+                            <p class="card__price-value">£584</p>
+                            <a href="#" class="btn btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+         <!-- CARD 3 -->
+         <div class="card">
+            <div class="card__side card__side--front card__side--front-3">
+
+                    <h3 class="card__heading">
+                    <span class="card__heading-span card__heading-span--3">Bali</span>
+                    </h3>
+
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                    <div class="card__price-box">
+                        <h4 class="card__price-title">Bali Intro</h4>
+                        <span class="card__price-underline">&nbsp;</span>
+                        <p class="card__price-only">Only</p>
+                        <p class="card__price-value">£629</p>
+                        <a href="#" class="btn btn-card">Book Now</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- CARD 4 -->
+         <div class="card">
+            <div class="card__side card__side--front card__side--front-4">
+
+                    <h3 class="card__heading">
+                    <span class="card__heading-span card__heading-span--4">South Africa</span>
+                    </h3>
+
+            </div>
+             <div class="card__side card__side--back card__side--back-4">
+                 <div class="card__cta">
+                     <div class="card__price-box">
+                         <h4 class="card__price-title">South Africa Wild Adventure</h4>
+                         <span class="card__price-underline">&nbsp;</span>
+                         <p class="card__price-only">Only</p>
+                         <p class="card__price-value">£844</p>
+                         <a href="#" class="btn btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       </section>
+       <!-- ABOUT SECTION -->
+       <section class="section-about" id="about">
+           <div class="section-about__heading u-margin-bottom-large u-center-text u-heading-secondary about__heading">
+               <h2 class="heading-secondary--text">
+                   Why choose Gap360?
+               </h2>
+           </div>
+           <div class="about-container">
+               <!-- SEC 1 -->
+               <div class="about-card about-card--1">
+                   <img class="about-card__img"src="./icons/Insurance.svg" alt="">
+                   <h4 class="about-card__heading">
+                       Insurance
+                   </h4>
+                   <p class="about-card__text">
+                       Dont forget your travel insurance! Finding the right insurance can be a scary thing but don't worry, we're here to help.
+                   </p>
+               </div>
+               <!-- SEC 2 -->
+               <div class="about-card about-card--2">
+              
+                <img class="about-card__img"src="./icons/Expert.svg" alt="">
+                <h4 class="about-card__heading">
+                    Expert Advisors
+                </h4>
+                <p class="about-card__text">
+                    Want to go travelling but don't know where to start? We have a team of expert travel advisors that will help you plan your perfect trip!
+                </p>
+            </div>
+            <!-- SEC 3 -->
+            <div class="about-card about-card--3">
+                <img class="about-card__img"src="./icons/Flights.svg" alt="">
+                <h4 class="about-card__heading">
+                    Flights
+                </h4>
+                <p class="about-card__text">
+                    Finding the best flights can sometimes be hard. We have experts dedicated to finding the best flights to fit around your travels!
+                </p>
+            </div>
+            <!-- SEC 4 -->
+            <div class="about-card about-card--4">
+                <img class="about-card__img"src="./icons/End-to-end.svg" alt="">
+                <h4 class="about-card__heading">
+                    End to End Support
+                </h4>
+                <p class="about-card__text">
+                    From the initial planning stages, right up until you are at the airport; we will be here to help you along the way
+                </p>
+            </div>
+           </div>
+       </section>
+       <!-- INFO SECTION -->
+       <section class="section-info">
+           <div class="info__form-container">
+               <form action="" class="info__form-container--form">
+                   <input type="text" class="info__form--item" placeholder="Your name">
+                   <input type="email" class="info__form--item" placeholder="Your email">
+                   <input type="text" class="info__form--item info__form--item-question" placeholder="How can we help?">
+                   <input type="submit" value="Find My Trip!" class=" info__form--item-submit">
+               </form>
+           </div>
+        </div>
+       </section>
+    </main>
+    <footer>
+        <section class="section-footer">
+            <div class="footer__logo">
+                <img src="./icons/logo-white.svg" alt="Gap360 White Logo " class="footer__logo--img">
+            </div>
+            <div class="footer__svgs">
+                <!-- FACEBOOK -->
+               <div class="social-icon-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.55 83.55"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M50,35.42l-.43,5.74h-5.6V60.42H36.55V41.16H32.82V35.42h3.73V29.86s-.26-6.36,7.38-6.71a25,25,0,0,1,6.8.67L50,29.48s-6-1.87-6,1.77v4.16h6Z"/><path class="cls-1" d="M41.77,83.55A41.78,41.78,0,1,1,83.55,41.77,41.82,41.82,0,0,1,41.77,83.55Zm0-77.81a36,36,0,1,0,36,36A36.07,36.07,0,0,0,41.77,5.74Z"/></g></g></svg>
+               </div>
+                <!-- TWITTER -->
+                <div class="social-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.55 83.55"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M59.33,28.4a14.83,14.83,0,0,1-4.63,1.77,7.28,7.28,0,0,0-12.59,5,7.61,7.61,0,0,0,.18,1.66,20.66,20.66,0,0,1-15-7.61,7.28,7.28,0,0,0,2.25,9.72,7.24,7.24,0,0,1-3.3-.91v.09a7.29,7.29,0,0,0,5.84,7.14,7.12,7.12,0,0,1-1.92.26,7.65,7.65,0,0,1-1.36-.13,7.26,7.26,0,0,0,6.8,5.05,14.59,14.59,0,0,1-9,3.12,14.1,14.1,0,0,1-1.73-.1A20.65,20.65,0,0,0,36,56.71C49.37,56.71,56.7,45.61,56.7,36c0-.31,0-.63,0-.94a14.82,14.82,0,0,0,3.64-3.77,14.69,14.69,0,0,1-4.19,1.15A7.32,7.32,0,0,0,59.33,28.4Z"/><path class="cls-1" d="M41.78,0A41.78,41.78,0,1,0,83.55,41.77,41.82,41.82,0,0,0,41.78,0Zm0,77.81a36,36,0,1,1,36-36A36.08,36.08,0,0,1,41.78,77.81Z"/></g></g></svg>
+                </div>
+                <!-- INSTAGRAM -->
+                <div class="social-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 83.55 83.55"><defs><linearGradient id="linear-gradient" x1="12.25" y1="14.25" x2="71.3" y2="73.3" gradientTransform="matrix(1, 0, 0, -1, 0, 85.55)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffbd00"/><stop offset="0.4" stop-color="#ca3744"/><stop offset="1" stop-color="#803ddf"/></linearGradient></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M59.92,29.23a9.81,9.81,0,0,0-5.6-5.6,14.08,14.08,0,0,0-4.65-.89c-2-.09-2.69-.11-7.89-.11s-5.86,0-7.9.11a14.08,14.08,0,0,0-4.65.89,9.81,9.81,0,0,0-5.6,5.6,14.08,14.08,0,0,0-.89,4.65c-.09,2-.11,2.69-.11,7.89s0,5.86.11,7.9a14.08,14.08,0,0,0,.89,4.65,9.81,9.81,0,0,0,5.6,5.6,14.08,14.08,0,0,0,4.65.89c2,.09,2.7.12,7.9.12s5.85,0,7.89-.12a14.08,14.08,0,0,0,4.65-.89,9.81,9.81,0,0,0,5.6-5.6,14.08,14.08,0,0,0,.89-4.65c.09-2,.11-2.69.11-7.9s0-5.85-.11-7.89A14.34,14.34,0,0,0,59.92,29.23ZM57.36,49.51a10.31,10.31,0,0,1-.66,3.56,5.86,5.86,0,0,1-1.43,2.2,6,6,0,0,1-2.2,1.43,10.56,10.56,0,0,1-3.56.66c-2,.09-2.62.11-7.73.11s-5.73,0-7.74-.11a10.82,10.82,0,0,1-3.56-.66,6.32,6.32,0,0,1-3.63-3.63,10.82,10.82,0,0,1-.66-3.56c-.09-2-.11-2.62-.11-7.74s0-5.71.11-7.73a10.82,10.82,0,0,1,.66-3.56,6,6,0,0,1,1.43-2.2,5.86,5.86,0,0,1,2.2-1.43A10.31,10.31,0,0,1,34,26.19c2-.09,2.62-.11,7.74-.11s5.71,0,7.73.11a10.31,10.31,0,0,1,3.56.66,6.32,6.32,0,0,1,3.63,3.63A10.31,10.31,0,0,1,57.36,34c.09,2,.11,2.62.11,7.73S57.45,47.49,57.36,49.51ZM41.78,31.94a9.84,9.84,0,1,0,9.83,9.83A9.83,9.83,0,0,0,41.78,31.94Zm0,16.22a6.39,6.39,0,1,1,6.38-6.39A6.39,6.39,0,0,1,41.78,48.16ZM54.3,31.55a2.3,2.3,0,1,1-2.3-2.3A2.3,2.3,0,0,1,54.3,31.55ZM41.77,0A41.78,41.78,0,1,0,83.55,41.77,41.82,41.82,0,0,0,41.77,0Zm0,77.81a36,36,0,1,1,36-36A36.08,36.08,0,0,1,41.77,77.81Z"/></g></g></svg>
+                </div>
+                <!-- YOUTUBE -->
+                <div class="social-icon-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.55 83.55"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M55.15,29.62a175.64,175.64,0,0,0-26.75,0,5.9,5.9,0,0,0-5.26,4.83,58.39,58.39,0,0,0,0,14.65,5.93,5.93,0,0,0,5.27,4.83,175.64,175.64,0,0,0,26.75,0,5.93,5.93,0,0,0,5.27-4.83,59.84,59.84,0,0,0,0-14.65A5.93,5.93,0,0,0,55.15,29.62Zm-18,17.31V36.62l9.17,5.15Z"/><path class="cls-1" d="M41.77,0A41.78,41.78,0,1,0,83.55,41.77,41.82,41.82,0,0,0,41.77,0Zm0,77.81a36,36,0,1,1,36-36A36.08,36.08,0,0,1,41.77,77.81Z"/></g></g></svg>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <ul class="footer__nav--list">
+                    <li class="footer__nav--item">
+                        <a href="#" class="footer__nav--link">Travel Store</a>
+                    </li>
+                    <li class="footer__nav--item">
+                        <a href="#" class="footer__nav--link">Insurance </a>
+                    </li>
+                    <li class="footer__nav--item">
+                        <a href="#" class="footer__nav--link">Cookies</a>
+                    </li>
+                    <li class="footer__nav--item">
+                        <a href="#" class="footer__nav--link">T&Cs</a>
+                    </li>
+                    <li class="footer__nav--item">
+                        <a href="#" class="footer__nav--link">Contact</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+.trip-finder {
+  &__form {
+    position: absolute;
+    display: block;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 15vh;
+    background-color: $color-grey-light-2;
+    border-radius: 25px;
+    box-shadow: 0 0rem 3rem rgba($color-black, 0.4);
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+  }
+
+  &__option {
+    display: inline-block;
+    // position: absolute;
+    // top: 50%;
+    // left: 4%;
+    // transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 10px;
+    height: 6vh;
+    width: 18vw;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-family: $secondary-font-family;
+    letter-spacing: 0.5px;
+    // text-transform: uppercase;
+
+    &:focus:not(:last-child) {
+      outline: none;
+      border: 1.75px solid $color-primary-light-1;
+    }
+  }
+
+  &__destination {
+    // margin-left: 12vw;
+    margin-left: 0;
+  }
+
+  &__submit {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 0;
+    width: 22vw;
+    letter-spacing: 1px;
+    font-weight: 500;
+    // font-size: 1rem;
+    text-transform: uppercase;
+
+    transition: all 0.4s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $color-grey-light-1;
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      cursor: pointer;
+      transform: translateY(-5px);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+
+    &:active {
+      background-color: $color-grey-light-1;
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      cursor: pointer;
+      transform: translateY(0);
+      box-shadow: 0 0.5rem 0.8rem rgba($color-black, 0.2);
+    }
+  }
+}

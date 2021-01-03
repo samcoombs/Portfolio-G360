@@ -1,0 +1,18 @@
+.experiences-container {
+  display: grid;
+
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+
+  grid-template-rows: 1fr 1fr auto auto;
+  grid-template-columns: repeat(auto-fit, 45rem);
+  overflow: hidden;
+
+  grid-gap: 5rem;
+}
+
+.section-experiences__heading {
+  display: flex;
+  justify-content: center;
+}

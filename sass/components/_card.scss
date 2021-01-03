@@ -1,0 +1,151 @@
+.card {
+  perspective: 150rem;
+  -mox-perspective: 150rem;
+  position: relative;
+  height: 34rem;
+  width: 45rem;
+
+  &__side {
+    height: 34rem;
+    width: 45rem;
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+
+    &--front {
+      &-1 {
+        background-image: linear-gradient(
+            to top right,
+            rgba($color-white, 0.25),
+            rgba($color-white, 0.25)
+          ),
+          url(../img/dan-freeman-7Zb7kUyQg1E-unsplash.jpg);
+        background-size: cover;
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+            to top right,
+            rgba($color-white, 0.1),
+            rgba($color-white, 0.1)
+          ),
+          url(../img/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
+        background-size: cover;
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+            to top right,
+            rgba($color-white, 0.2),
+            rgba($color-white, 0.2)
+          ),
+          url(../img/niklas-weiss--2WlTWZLnRc-unsplash.jpg);
+        background-size: cover;
+      }
+
+      &-4 {
+        background-image: linear-gradient(
+            to top right,
+            rgba($color-white, 0.2),
+            rgba($color-white, 0.2)
+          ),
+          url(../img/hu-chen-60XLoOgwkfA-unsplash.jpg);
+        background-size: cover;
+      }
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to top right,
+          $color-primary-dark-1,
+          $color-primary-light-1
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to top right,
+          $color-primary-dark-1,
+          $color-primary-light-1
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to top right,
+          $color-primary-dark-1,
+          $color-primary-light-1
+        );
+      }
+
+      &-4 {
+        background-image: linear-gradient(
+          to top right,
+          $color-primary-dark-1,
+          $color-primary-light-1
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // STYLING
+
+  // FRONT
+  &__side--front {
+    // opacity: 0; //REMOVE THIS
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: $color-white;
+    text-shadow: 0 0 1rem rgba($color-black, 0.6);
+  }
+
+  // BACK SIDE
+  &__price {
+    &-title {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      padding-bottom: 1rem;
+      padding-top: 3rem;
+    }
+
+    &-underline {
+      border-top: 1.5px solid $color-white;
+      padding-right: 40rem;
+    }
+
+    &-only {
+      padding-top: 3.5rem;
+      font-size: 1.5rem;
+      font-family: $secondary-font-family;
+      text-transform: uppercase;
+    }
+
+    &-value {
+      // padding-top: 1.5rem;
+      padding-bottom: 3rem;
+      font-size: 4rem;
+    }
+  }
+
+  &__side--back {
+    text-align: center;
+    color: $color-white;
+  }
+}
