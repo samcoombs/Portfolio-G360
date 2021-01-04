@@ -3,11 +3,13 @@
   -mox-perspective: 150rem;
   position: relative;
   height: 34rem;
-  width: 45rem;
+  width: 55rem;
+  margin: 0 auto;
 
   &__side {
     height: 34rem;
-    width: 45rem;
+    width: 55rem;
+    // min-width: 45rem;
     position: absolute;
     border-radius: 5px;
     overflow: hidden;
@@ -147,5 +149,15 @@
   &__side--back {
     text-align: center;
     color: $color-white;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .card {
+    width: 95vw;
+
+    &__side {
+      width: inherit;
+    }
   }
 }
