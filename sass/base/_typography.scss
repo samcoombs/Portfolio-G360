@@ -1,10 +1,13 @@
 body {
   font-family: $default-font-family, $backup-font-family;
-  // font-style: italic;
   letter-spacing: 3px;
 }
 
-// NAVIGATION
+// MODAL
+
+.modal__header {
+  text-transform: uppercase;
+}
 
 .navigation {
   &__item {
@@ -55,17 +58,20 @@ body {
 
 .experiences-heading {
   padding-top: 20vh;
+  text-transform: uppercase;
 }
 
 // ABOUT
 .about__heading {
   padding-top: 20vh;
+  text-transform: uppercase;
 }
 
 .about-card {
   &__heading {
     font-size: 2rem;
     color: $color-primary;
+    text-transform: uppercase;
   }
 
   &__text {

@@ -945,6 +945,10 @@ body {
   letter-spacing: 3px;
 }
 
+.modal__header {
+  text-transform: uppercase;
+}
+
 .navigation__item a {
   font-family: "Raleway";
   font-weight: 500;
@@ -982,15 +986,18 @@ body {
 
 .experiences-heading {
   padding-top: 20vh;
+  text-transform: uppercase;
 }
 
 .about__heading {
   padding-top: 20vh;
+  text-transform: uppercase;
 }
 
 .about-card__heading {
   font-size: 2rem;
   color: #83b901;
+  text-transform: uppercase;
 }
 
 .about-card__text {
