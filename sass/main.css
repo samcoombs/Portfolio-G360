@@ -1,7 +1,7 @@
 .header {
   height: 105vh;
   width: auto;
-  background-image: url(../img/Home.jpg);
+  background-image: url(../img/Home-Compressed.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -326,7 +326,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 49.9%, transparent 50%), url(../img/george-bakos-OvEr7BwXxxg-unsplash.jpg);
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 49.9%, transparent 50%), url(../img/Form-Compressed.jpg);
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
@@ -675,26 +675,26 @@
 }
 
 .card__side--front-1 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0.25))), url(../img/dan-freeman-7Zb7kUyQg1E-unsplash.jpg);
-  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../img/dan-freeman-7Zb7kUyQg1E-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0.25))), url(../img/Australia-Compressed.jpg);
+  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../img/Australia-Compressed.jpg);
   background-size: cover;
 }
 
 .card__side--front-2 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../img/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
-  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../img/Thailand-Compressed.jpg);
+  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/Thailand-Compressed.jpg);
   background-size: cover;
 }
 
 .card__side--front-3 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/niklas-weiss--2WlTWZLnRc-unsplash.jpg);
-  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/niklas-weiss--2WlTWZLnRc-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/Africa-Compressed.jpg);
+  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/Africa-Compressed.jpg);
   background-size: cover;
 }
 
 .card__side--front-4 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/hu-chen-60XLoOgwkfA-unsplash.jpg);
-  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/hu-chen-60XLoOgwkfA-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/Bali-Compressed.jpg);
+  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/Bali-Compressed.jpg);
   background-size: cover;
 }
 
