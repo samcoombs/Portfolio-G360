@@ -619,6 +619,7 @@
   letter-spacing: 1px;
   font-weight: 500;
   text-transform: uppercase;
+  z-index: 1000;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -887,6 +888,7 @@
 }
 
 .section-experiences {
+  padding-top: 10rem;
   width: 100%;
   height: auto;
   background-color: #f5f5f5;
@@ -985,7 +987,7 @@ body {
 }
 
 .experiences-heading {
-  padding-top: 20vh;
+  padding-top: 15vh;
   text-transform: uppercase;
 }
 
