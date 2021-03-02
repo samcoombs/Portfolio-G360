@@ -1,0 +1,23 @@
+.intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+
+  &__container {
+    width: 70%;
+  }
+  &__heading {
+    margin-bottom: 1rem;
+  }
+
+  &__sub {
+    max-width: 70rem;
+  }
+}
+
+// SCROLL DOWN
+
+.scroll-down__header {
+  top: 90vh;
+}

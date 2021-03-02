@@ -1,0 +1,138 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  // padding: 3rem;
+  padding: 5vh;
+  animation: appear 1s 0.5s;
+  animation-fill-mode: backwards;
+
+  &__logo {
+    color: $color-grey-dark-1;
+  }
+
+  &__list {
+    display: inline-flex;
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    // padding-right: 2rem;
+    padding-right: 5vh;
+  }
+
+  &__link {
+    // font-size: 1.2rem;
+    font-size: 2vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $color-grey-dark-1;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-blue-middle-1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+
+  &__line {
+    width: 3rem;
+    height: 0.3rem;
+    margin: 0.5rem;
+    background-color: $color-grey-dark-1;
+    padding: 0;
+    transition: all 0.3s;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .open {
+    .burger {
+      &__line {
+        background-color: $color-grey-light-1;
+        &-1 {
+          transform: rotate(45deg) translate(5px, 6.5px);
+        }
+        &-3 {
+          transform: rotate(-45deg) translate(5px, -6px);
+        }
+        &-2 {
+          transform: translateX(2rem);
+          background: transparent;
+        }
+      }
+    }
+    .nav {
+      &__list {
+        transform: translateX(0);
+      }
+      &__link {
+        opacity: 1;
+      }
+    }
+  }
+
+  .nav {
+    &__list {
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      background-color: $color-blue-middle-1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: 100;
+      // display: none;
+      transform: translateY(-100%);
+      transition: all 0.4s;
+    }
+
+    &__item {
+      padding-right: 5vh;
+    }
+
+    &__link {
+      padding: 1vh;
+      opacity: 0;
+      font-size: 7vh;
+      color: $color-grey-light-1;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 49.9%,
+        $color-grey-light-1 50%
+      );
+      background-size: 230%;
+      transition: all 0.4s;
+
+      &:hover {
+        background-position: 100%;
+        // background-color: $color-grey-light-1;
+      }
+    }
+  }
+
+  .burger {
+    display: block;
+    z-index: 200;
+  }
+}

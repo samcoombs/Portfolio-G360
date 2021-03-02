@@ -1,20 +1,16 @@
-@import "abstracts/variables";
+@import "./abstracts/variables";
 
-@import "layout/heading";
-@import "layout/navigation-main";
-@import "layout/experiences";
-@import "layout/about";
-@import "layout/info-form";
-@import "layout/footer";
+@import "./layout/navigation";
+@import "./layout/header";
+@import "./layout/work";
+@import "./layout/contact";
+@import "./layout/footer";
 
-@import "components/search-bar";
-@import "components/find-my-trip";
-@import "components/card";
-@import "components/button";
-@import "components/offers-modal";
+@import "./components/scroll-down";
+@import "./components/buttons";
 
-@import "pages/home";
+@import "./pages/home";
 
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animations";

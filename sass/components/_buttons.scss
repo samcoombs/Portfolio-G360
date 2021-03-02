@@ -1,0 +1,52 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2vh;
+  color: $color-grey-dark-1;
+  border-radius: 10vh;
+  // width: 18vh;
+  // height: 6vh;
+  background-color: $color-grey-light-1;
+  margin: 3vh;
+  transition: all 0.3s;
+  // font-size: 1.2rem;
+  // border-radius: 50px;
+  width: 13rem;
+  height: 4rem;
+  // margin: 2rem;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 0.2rem 0.5rem rgba($color-black, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .btn {
+    width: 12vh;
+    height: 4vh;
+    font-size: 1.5vh;
+    margin: 1.5vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .btn {
+    width: 10vh;
+    height: 3vh;
+    font-size: 1.2vh;
+    margin: 1.2vh;
+  }
+}

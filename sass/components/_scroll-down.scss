@@ -1,0 +1,14 @@
+.scroll-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  animation: moveInUp 1s, bounce 0.6s 2s;
+}
+
+.feather-chevron-down {
+  // height: 4rem;
+  height: 4vh;
+  stroke: $color-blue-middle-1;
+}
