@@ -687,14 +687,14 @@
 }
 
 .card__side--front-3 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/Africa-Compressed.jpg);
-  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/Africa-Compressed.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/Bali-Compressed.jpg);
+  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/Bali-Compressed.jpg);
   background-size: cover;
 }
 
 .card__side--front-4 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/Bali-Compressed.jpg);
-  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/Bali-Compressed.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/Africa-Compressed.jpg);
+  background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/Africa-Compressed.jpg);
   background-size: cover;
 }
 
